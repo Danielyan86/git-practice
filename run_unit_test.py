@@ -19,4 +19,5 @@ class TestStringMethods(unittest.TestCase):
 
 
 if __name__ == '__main__':
+    print "start to run unit test"
     unittest.main()
