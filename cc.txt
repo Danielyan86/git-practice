@@ -1,1 +1,2 @@
+add one
 this is cc file
