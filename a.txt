@@ -1,7 +1,0 @@
-this is an initial file
-add the second line
-<<<<<<< HEAD
-add 3
-add 4
-=======
->>>>>>> parent of 831f04b... add 3
