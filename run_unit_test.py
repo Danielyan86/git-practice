@@ -22,4 +22,3 @@ if __name__ == '__main__':
     print "start to run unit test"
     print "start to run unit test"
     unittest.main()
-    raise AssertionError("ERROR")
