@@ -2,7 +2,7 @@ pipeline {
     agent { label 'mac_agent' }
 
     stages {
-        stage('buidl') {
+        stage('build') {
             steps {
                 sh 'echo "this build step"'
             }
@@ -13,23 +13,19 @@ pipeline {
                 sh 'python run_unit_test.py'
             }
         }
-        
 
-        stage {
-            stage('API test') {
-                steps {
-                    sh 'robot  --outputdir reports api_test_demo.robot'
-                }
+        stage('API test') {
+            steps {
+                sh 'robot  --outputdir reports api_test_demo.robot'
             }
         }
 
-        stage {
-            stage('UI automation test') {
-                steps {
-                    sh 'echo "this is UI automation test"'
-                }
+        stage('UI automation test') {
+            steps {
+                sh 'echo "this is UI automation test"'
             }
         }
+    
 
     }
 }
